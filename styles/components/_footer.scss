@@ -4,23 +4,25 @@
 // Creating footer styling base for pages
 footer {
     background-color: $primary-background;
-    align-items: center;
+    display: flex;
+    height: 60px;
+
 
     // Links to Github and LinkedIn accounts
     .social-links {
         background-color: $primary-color;
-        display: flex;
-        width: 50%;
-        justify-content: space-around;
-        margin-bottom: 15px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 200px;
+        height: 20px;
+        justify-content: space-between;
+        align-self: center;
+
     }
 
     // Alignment for Contact link for bottem of pages
     .info {
         align-self: center;
         text-align: center;
-        margin: 15px;
+        justify-content: center;
+
     }
 }
