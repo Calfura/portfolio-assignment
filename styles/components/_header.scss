@@ -1,10 +1,10 @@
 @import "../defaults/colors";
 @import "../defaults/breakpoints";
+@import "../defaults/ulti";
 
 // Header main space allocation
 header {
-    background-color: $primary-background;
-    height: 100px;
+    @include background-main();
 
     // Setting the location of the name-bar and styling of the font
     .name-bar {
