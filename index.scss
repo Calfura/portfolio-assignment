@@ -1,10 +1,5 @@
-header {
-    background-color: red;
-    padding: 16px;
-    height: 100px;
-    text-align: center;
-}
+@import "./styles/defaults/colors";
+@import "./styles/defaults/breakpoints";
+@import "./styles/components/footer";
+@import "./styles/components/header";
 
-body {
-    margin: 0;
-}

@@ -1,0 +1,12 @@
+@import "../../index";
+
+footer {
+    color: $secondary-color;
+
+    .social-links {
+        background-color: $primary-background;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,20 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+
+header {
+    display: flex;
+    background-color: $primary-background;
+    padding: 16px;
+    height: 100px;
+
+    // Setting the location of the name-bar and styling of the font
+    .name-bar {
+        background-color: $secondary-color;
+        width: 400px;
+        height: 50px;
+        font-size: 36px;
+        font-weight: bold;
+        // font-family: ;
+    }
+
+}
