@@ -1,12 +1,26 @@
-@import "../../index";
+@import "../defaults/breakpoints";
+@import "../defaults/colors";
 
+// Creating footer styling base for pages
 footer {
-    color: $secondary-color;
+    background-color: $primary-background;
+    align-items: center;
 
+    // Links to Github and LinkedIn accounts
     .social-links {
-        background-color: $primary-background;
+        background-color: $primary-color;
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
+        width: 50%;
+        justify-content: space-around;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // Alignment for Contact link for bottem of pages
+    .info {
+        align-self: center;
+        text-align: center;
+        margin: 15px;
     }
 }

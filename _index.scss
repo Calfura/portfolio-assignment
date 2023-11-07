@@ -1,0 +1,16 @@
+// Main import file for other SCSS file's.
+@import "./styles/defaults/colors";
+@import "./styles/defaults/breakpoints";
+@import "./styles/components/header";
+@import "./styles/components/footer";
+
+// Body adjustment / background color to be used
+body {
+    margin: 0;
+    background-color: gray;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

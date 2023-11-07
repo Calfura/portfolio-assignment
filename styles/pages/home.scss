@@ -1,2 +1,6 @@
-@import "../components/footer";
-@import "../components/header";
+@import "../../index";
+
+main {
+    height: auto;
+    background-color: $primary-color;
+}

@@ -1,6 +1,7 @@
 @import "../defaults/colors";
 @import "../defaults/breakpoints";
 
+// Header main space allocation
 header {
     display: flex;
     background-color: $primary-background;
