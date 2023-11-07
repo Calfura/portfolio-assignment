@@ -1,6 +1,37 @@
 @import "../../index";
 
 main {
-    height: auto;
     background-color: $primary-color;
+    height: auto;
+
+    // section setup for mobile-view
+    section {
+
+        .picture-item {            
+            @include home-mobile
+        }
+
+        .welcome-item {            
+            @include home-mobile
+        }
+        
+        .blog-item {            
+            @include home-mobile
+        }
+
+        // Style setting for text after each picture (mobile-view)
+        .picture-info {
+            width: 95%;
+            p {
+                display: flex;
+                font-size: 18px;
+                text-align: center;
+                text-wrap: balance;             
+            }
+        }
+    }
+    
+
+
 }
+

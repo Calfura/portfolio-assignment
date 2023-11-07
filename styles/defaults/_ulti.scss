@@ -1,4 +1,18 @@
+// Used for Header and footer
 @mixin background-main() {
     background-color: $primary-background;
     height: 80px;
+}
+
+@mixin home-mobile() {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+   img {
+    width: 500px;
+    height: 400px;
+   }
 }

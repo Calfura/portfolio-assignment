@@ -5,6 +5,7 @@
 // Creating footer styling base for pages
 footer {
     @include background-main();
+    padding-top: 10px;
 
     display: flex;
     flex-direction: column;

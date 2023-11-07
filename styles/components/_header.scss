@@ -5,6 +5,7 @@
 // Header main space allocation
 header {
     @include background-main();
+    padding-bottom: 30px;
 
     // Setting the location of the name-bar and styling of the font
     .name-bar {
@@ -34,7 +35,6 @@ header {
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            transition: 0.4s;
         }
 
         a:hover {
