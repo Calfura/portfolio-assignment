@@ -1,28 +1,47 @@
 @import "../../index";
-
 @media screen and (max-width: $small) {
     
     main {
+        @include mobile-center;
+
         section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             .blog-one {
-
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
             }
 
             .blog-two {
-
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
             }
 
             .blog-three {
-
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
             }
 
             .blog-four {
-
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
             }
 
             .blog-five {
-                
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
     }

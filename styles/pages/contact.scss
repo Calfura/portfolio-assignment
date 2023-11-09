@@ -4,7 +4,7 @@
 @media screen and (max-width: $small) {
 
     main {
-        display: flex;
+        @include mobile-center;
         flex-direction: column;
 
         // Section for top picture

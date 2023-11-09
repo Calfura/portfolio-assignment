@@ -4,6 +4,7 @@
     height: 80px;
 }
 
+// 
 @mixin home-mobile() {
     
     display: flex;
@@ -16,4 +17,10 @@
     width: 400px;
     height: 300px;
    }
+}
+
+// Alignment setting for centering
+@mixin mobile-center() {
+    display: flex;
+    justify-content: center;
 }

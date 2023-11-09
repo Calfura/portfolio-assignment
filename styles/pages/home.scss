@@ -5,11 +5,8 @@
     
     main {
         // background-color: $primary-color;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
+        @include mobile-center;
+        
         // section setup for mobile-view
         section {
             width: 95%;        
@@ -30,16 +27,6 @@
                
                     }
                 }
-            }
-    
-            // Style setting for text after each picture (mobile-view)
-            
-            .welcome-item {            
-                @include home-mobile
-            }
-            
-            .blog-item {            
-                @include home-mobile
             }
         }    
     }
