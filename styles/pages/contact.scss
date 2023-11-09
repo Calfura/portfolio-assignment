@@ -1,1 +1,88 @@
 @import "../../index";
+
+// Small screen media of 600 ($small)
+@media screen and (max-width: $small) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+        // Section for top picture
+        .picture-sect {
+            display: flex;
+            justify-content: center;
+
+            .picture-item {
+                img {
+                    align-self: center;
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+
+        // Section to control icons.
+        .contact-top {
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+            width: 50%;
+
+            .download-item {
+                font-size: 50px;
+            }
+
+            .phone-item {
+                font-size: 50px;
+                color: blue;
+            }
+
+            .address-item {
+                font-size: 50px;
+                color: blue;
+            }
+        }
+
+        // Section for text-boxes and submit button
+        .contact-btm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .name-item {
+                font-size: 24px;
+
+                #name {
+                    width: 450px;
+                    font-size: 24px;
+                }
+            }
+
+            .email-item {
+                font-size: 24px;
+                
+                #email {
+                    width: 450px;
+                    font-size: 24px;
+                }
+            }
+
+            .message-item {
+                font-size: 24px;
+                #message{
+                    width: 450px;
+                    font-size: 24px;
+                }
+            }
+
+            .submit-btn {
+                #submit {
+                    width: 100px;
+                    height: 50px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    
+}

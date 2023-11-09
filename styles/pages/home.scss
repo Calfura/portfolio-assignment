@@ -1,37 +1,46 @@
 @import "../../index";
 
-main {
-    background-color: $primary-color;
-    height: auto;
-
-    // section setup for mobile-view
-    section {
-
-        .picture-item {            
-            @include home-mobile
-        }
-
-        .welcome-item {            
-            @include home-mobile
-        }
-        
-        .blog-item {            
-            @include home-mobile
-        }
-
-        // Style setting for text after each picture (mobile-view)
-        .picture-info {
-            width: 95%;
-            p {
-                display: flex;
-                font-size: 18px;
-                text-align: center;
-                text-wrap: balance;             
-            }
-        }
-    }
+// Small screen media of 600 ($small)
+@media screen and (max-width: $small) {
     
-
-
+    main {
+        // background-color: $primary-color;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        // section setup for mobile-view
+        section {
+            width: 95%;        
+            margin: 15px;
+    
+            .picture-item {
+                img {
+                    height: 550px;
+                    width: 500px;
+                }
+    
+                .picture-info {
+        
+                    .description {
+                        background-color: $primary-color;
+                        font-size: 20px;
+                        text-align: center;
+               
+                    }
+                }
+            }
+    
+            // Style setting for text after each picture (mobile-view)
+            
+            .welcome-item {            
+                @include home-mobile
+            }
+            
+            .blog-item {            
+                @include home-mobile
+            }
+        }    
+    }
 }
-

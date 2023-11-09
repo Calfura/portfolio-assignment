@@ -23,8 +23,40 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Home</h2>
+        <section class="picture-sect">
+            <div class="picture-item">
+                <img src="../images/profile_image.jpg" alt="Picture">
+            </div>
+        </section>
+        <section class="contact-btm">
+            <div class="name-item">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="email-item">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="message-item">
+                <label for="message">Message:</label><br>
+                <textarea name="comment" id="message" cols="30" rows="10">Message...</textarea>
+            </div>
+            <div class="submit-btn">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </section>
+        <section class="contact-top">
+            <div class="download-item">
+                <a href="../files/TravisResume.docx" download>
+                    <i class="fa-solid fa-file-export"></i>
+                </a>
+            </div>
+            <div class="phone-item">
+                <i class="fa-solid fa-mobile"></i>
+            </div>
+            <div class="address-item">
+                <i class="fa-regular fa-address-book"></i>
+            </div>
         </section>
     </main>
     <footer>
@@ -35,9 +67,6 @@
             <a href="https://github.com/Calfura/portfolio-assignment" target="_blank">
                 <i class="fa-brands fa-github-alt"></i>
             </a>
-        </div>
-        <div class="info">
-            <a class="contact" href="./pages/contact.html">Contact</a>
         </div>
     </footer>
 </body>
