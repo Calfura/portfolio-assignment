@@ -4,7 +4,7 @@
     height: 80px;
 }
 
-// 
+// Small screen media of 600 ($small) styling
 @mixin home-mobile() {
     
     display: flex;
@@ -19,8 +19,12 @@
    }
 }
 
-// Alignment setting for centering
+// Alignment setting for centering for small screens
 @mixin mobile-center() {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

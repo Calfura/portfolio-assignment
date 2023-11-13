@@ -26,20 +26,48 @@
             display: flex;
             align-self: center;
             justify-content: space-between;
-            width: 50%;
+            width: 60%;
 
             .download-item {
+                width: 30%;
                 font-size: 50px;
+                color: blue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    color: black;
+                    font-size: 14px;
+                    text-align: center;
+                }
             }
 
             .phone-item {
+                width: 30%;
                 font-size: 50px;
                 color: blue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    color: black;
+                    font-size: 14px;
+                    text-align: center;
+                }
             }
 
             .address-item {
+                width: 30%;
                 font-size: 50px;
                 color: blue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    color: black;
+                    font-size: 14px;
+                    text-align: center;
+                }
             }
         }
 
@@ -55,15 +83,17 @@
                 #name {
                     width: 450px;
                     font-size: 24px;
+                    border: solid black;
                 }
             }
 
             .email-item {
                 font-size: 24px;
-                
+
                 #email {
                     width: 450px;
                     font-size: 24px;
+                    border: solid black;
                 }
             }
 
@@ -72,14 +102,26 @@
                 #message{
                     width: 450px;
                     font-size: 24px;
+                    border: solid black;
                 }
             }
-
+            // Button for submmit, slightly rounded
             .submit-btn {
                 #submit {
                     width: 100px;
                     height: 50px;
                     font-size: 24px;
+                    border-radius: 25%;
+                    border: solid black;
+                }
+                // Shows effect when cursor is hovering over button
+                #submit:hover {
+                    background-color: teal;
+                }
+                // Gives effect for button press and adding a shadow effect on press
+                #submit:active {
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
                 }
             }
         }

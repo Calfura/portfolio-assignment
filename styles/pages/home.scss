@@ -13,6 +13,10 @@
             margin: 15px;
     
             .picture-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 img {
                     height: 550px;
                     width: 500px;
