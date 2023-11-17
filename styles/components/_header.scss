@@ -16,25 +16,23 @@ header {
         font-size: 36px;
         font-weight: bold;
         text-align: center;
-        // font-family: ;
     }
 
     #nav-bar {
         display: flex;
-        justify-content: space-around;
-        background-color: yellow;
+        background-color: lightgray;
         font-size: 20px;
 
         a {
             background-color: gray;
             border: none;
-            margin: 4px;
+            margin: 4px 20px 4px;
             color: white;
             padding: 8px 16px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
+            font-size: 18px;
             border-radius: 25%;
             border: solid black 2px;
         }
@@ -52,7 +50,55 @@ header {
 
 }
 
-// @media screen and (max-width: $small;) {
 
+
+@media screen and (max-width: $medium) {
+
+    header {
+        @include background-main();
+        padding-bottom: 30px;
     
-// }
+        // Setting the location of the name-bar and styling of the font
+        .name-bar {
+            background-color: $secondary-color;
+            width: 50%;
+            height: 50px;
+            margin-bottom: 15px;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        #nav-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgray;
+            font-size: 20px;
+    
+            a {
+                background-color: gray;
+                border: none;
+                margin: 4px;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 25%;
+                border: solid black 2px;
+            }
+    
+            a:hover {
+                background-color: green;
+                color: white;
+            }
+    
+            a:active {
+                box-shadow: 0 2px #666;
+                transform: translateY(1px);
+            }
+        }
+    
+    } 
+}

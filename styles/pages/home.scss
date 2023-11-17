@@ -1,5 +1,87 @@
 @import "../../index";
 
+// Large screen media bigger than 768
+@media screen and (min-width: $medium) {
+    
+    main {
+        @include mobile-center;
+        align-self: center;
+        
+        // section setup for mobile-view
+        section {
+            width: 95%;        
+            margin: 15px;
+    
+            .picture-item {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    height: 550px;
+                    width: 500px;
+                    border-radius: 20%;
+                }
+    
+                .picture-info {
+                    
+                    .description {
+                        border: solid 2px black;
+                        border-radius: 5%;
+                        margin-left: 10%;
+                        margin-top: 10%;
+                        background-color: lightslategray;
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: center;
+               
+                    }
+                }
+            }
+        }    
+    }
+}
+
+// Medium screen media of 768 ($medium)
+@media screen and (max-width: $medium) {
+    
+    main {
+        @include mobile-center;
+        align-self: center;
+        
+        // section setup for mobile-view
+        section {
+            width: 95%;        
+            margin: 15px;
+    
+            .picture-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    height: 550px;
+                    width: 500px;
+                    border-radius: 20%;
+                }
+    
+                .picture-info {
+                    
+                    .description {
+                        border: solid 2px black;
+                        border-radius: 5%;
+                        background-color: lightslategray;
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: center;
+               
+                    }
+                }
+            }
+        }    
+    }
+}
+
 // Small screen media of 600 ($small)
 @media screen and (max-width: $small) {
     
@@ -20,13 +102,16 @@
                 img {
                     height: 550px;
                     width: 500px;
+                    border-radius: 20%;
                 }
     
                 .picture-info {
         
                     .description {
-                        background-color: $primary-color;
-                        font-size: 20px;
+                        border: solid 2px black;
+                        border-radius: 5%;
+                        background-color: lightslategray;
+                        font-size: 24px;
                         text-align: center;
                
                     }
