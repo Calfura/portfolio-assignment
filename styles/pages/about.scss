@@ -2,50 +2,14 @@
 
 // Larger screen media of +768 ($small) styling
 @media screen and (min-width: $medium) {
-
-        main {
-            .about-title {
-                display: flex;
-                align-self: center;
-                justify-content: center;
-            }
-
-            section {
-                @include home-mobile;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-
-                .about {
-                    img{
-                        width: 50%;
-                        height: 50%;
-                        border-radius: 15%;
-                    }
-                    .txt {
-                        border: solid 2px black;
-                        border-radius: 15%;
-                        background-color: slategray;
-                        padding: 20px;
-                        font-size: 24px ;
-                        font-weight: bold;
-                        margin: 15px;
-                    }
-                }
-            }
-        }
-    }
-
-    // Small/medium screen media of 768 styling
-@media screen and (max-width: $medium) {
-
+    // Centering of items
     main {
         .about-title {
             display: flex;
             align-self: center;
             justify-content: center;
         }
-
+        // further centering, as it was off center slightly.
         section {
             @include home-mobile;
             flex-direction: column;
@@ -53,18 +17,57 @@
             text-align: center;
 
             .about {
+                // Image scaling. Found 50% was the sweet spot for the webpage
                 img{
                     width: 50%;
                     height: 50%;
                     border-radius: 15%;
                 }
+                // Made font sizing larger and bolded. Allows easier reading for people with glasses or poorer eye-sights.
                 .txt {
                     border: solid 2px black;
                     border-radius: 15%;
                     background-color: slategray;
                     padding: 20px;
-                    font-size: 18px ;
+                    font-size: 24px ;
                     font-weight: bold;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+}
+
+    // Small/medium screen media of 768 styling
+@media screen and (max-width: $medium) {
+            // Centering of item
+    main {
+        .about-title {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+                    // further centering, as it was off center slightly.
+        section {
+            @include home-mobile;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .about {
+                // Incresed width % for smaller screens
+                img{
+                    width: 70%;
+                    height: 50%;
+                    border-radius: 15%;
+                }
+                // Removed bolding from smaller screens and reduced font sizing by small amount.
+                .txt {
+                    border: solid 2px black;
+                    border-radius: 15%;
+                    background-color: slategray;
+                    padding: 20px;
+                    font-size: 22px ;
                     margin: 15px;
                 }
             }

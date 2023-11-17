@@ -17,12 +17,12 @@ header {
         font-weight: bold;
         text-align: center;
     }
-
+    // Navbar setup, allows buttons to be lined up in a ordered row
     #nav-bar {
         display: flex;
         background-color: lightgray;
         font-size: 20px;
-
+        // Style and sizing for each button
         a {
             background-color: gray;
             border: none;
@@ -36,12 +36,12 @@ header {
             border-radius: 25%;
             border: solid black 2px;
         }
-
+        // Highlights button on hover
         a:hover {
             background-color: green;
             color: white;
         }
-
+        // Pressable button with animation
         a:active {
             box-shadow: 0 2px #666;
             transform: translateY(1px);
