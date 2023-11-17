@@ -7,126 +7,120 @@
         @include mobile-center;
 
         // Section for top picture
-        .picture-sect {
+        .contacts {
             display: flex;
             justify-content: center;
+            align-self: ce;
 
             .picture-item {
                 img {
                     align-self: center;
                     width: 400px;
-                    height: 400px;
                     margin: 10px 10px 10px;
                 }
             }
-        }
 
-        // Section to control icons.
-        .contact-top {
-            display: flex;
-            align-self: center;
-            justify-content: space-between;
-            width: 400px;
-
-            .download-item {
-                width: 30%;
-                font-size: 50px;
-                color: blue;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                p {
-                    color: black;
-                    font-size: 14px;
-                    text-align: center;
-                }
-            }
-
-            .phone-item {
-                width: 30%;
-                font-size: 50px;
-                color: blue;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                p {
-                    color: black;
-                    font-size: 14px;
-                    text-align: center;
-                }
-            }
-
-            .address-item {
-                width: 30%;
-                font-size: 50px;
-                color: blue;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                p {
-                    color: black;
-                    font-size: 14px;
-                    text-align: center;
-                }
-            }
-        }
-
-        // Section for text-boxes and submit button
-        .contact-btm {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .name-item {
-                font-size: 24px;
-
-                #name {
-                    width: 450px;
+                // Section for text-boxes and submit button
+                .name-item {
                     font-size: 24px;
-                    border: solid black;
+    
+                    #name {
+                        width: 450px;
+                        font-size: 24px;
+                        border: solid black;
+                    }
                 }
-            }
-
-            .email-item {
-                font-size: 24px;
-
-                #email {
-                    width: 450px;
+                // Email styling and format
+                .email-item {
                     font-size: 24px;
-                    border: solid black;
+    
+                    #email {
+                        width: 450px;
+                        font-size: 24px;
+                        border: solid black;
+                    }
                 }
-            }
-
-            .message-item {
-                font-size: 24px;
-                #message{
-                    width: 450px;
+                // Message styling and format
+                .message-item {
                     font-size: 24px;
-                    border: solid black;
+                    #message{
+                        width: 450px;
+                        font-size: 24px;
+                        border: solid black;
+                    }
                 }
-            }
-            // Button for submmit, slightly rounded
-            .submit-btn {
-                #submit {
-                    width: 100px;
-                    height: 50px;
-                    font-size: 24px;
-                    border-radius: 25%;
-                    border: solid black;
+                // Button for submmit, slightly rounded
+                .submit-btn {
+                    #submit {
+                        width: 100px;
+                        height: 50px;
+                        font-size: 24px;
+                        border-radius: 25%;
+                        border: solid black;
+                    }
+                    // Shows effect when cursor is hovering over button
+                    #submit:hover {
+                        background-color: teal;
+                    }
+                    // Gives effect for button press and adding a shadow effect on press
+                    #submit:active {
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
+                    }
                 }
-                // Shows effect when cursor is hovering over button
-                #submit:hover {
-                    background-color: teal;
+                // Resume link, phone and address postioning
+                .p-info {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    margin-top: 10px;
+                    position: relative;
+        
+                    .download-item {
+                        width: 30%;
+                        font-size: 50px;
+                        color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            color: black;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+            
+                    .phone-item {
+                        width: 30%;
+                        font-size: 50px;
+                        color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            color: black;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+            
+                    .address-item {
+                        width: 30%;
+                        font-size: 50px;
+                        color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            color: black;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
                 }
-                // Gives effect for button press and adding a shadow effect on press
-                #submit:active {
-                    box-shadow: 0 5px #666;
-                    transform: translateY(4px);
-                }
-            }
+        
         }
     }
-    
 }
 
 // Small/medium screen media of 600/768 ($small)
@@ -134,126 +128,121 @@
 
     main {
         @include mobile-center;
-        flex-direction: column;
 
         // Section for top picture
-        .picture-sect {
+        .contacts {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
             .picture-item {
                 img {
                     align-self: center;
                     width: 400px;
-                    height: 400px;
-                }
-            }
-        }
-
-        // Section to control icons.
-        .contact-top {
-            display: flex;
-            align-self: center;
-            justify-content: space-between;
-            width: 60%;
-
-            .download-item {
-                width: 30%;
-                font-size: 50px;
-                color: blue;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                p {
-                    color: black;
-                    font-size: 14px;
-                    text-align: center;
+                    margin: 10px 10px 10px;
                 }
             }
 
-            .phone-item {
-                width: 30%;
-                font-size: 50px;
-                color: blue;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                p {
-                    color: black;
-                    font-size: 14px;
-                    text-align: center;
-                }
-            }
-
-            .address-item {
-                width: 30%;
-                font-size: 50px;
-                color: blue;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                p {
-                    color: black;
-                    font-size: 14px;
-                    text-align: center;
-                }
-            }
-        }
-
-        // Section for text-boxes and submit button
-        .contact-btm {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .name-item {
-                font-size: 24px;
-
-                #name {
-                    width: 450px;
+                // Section for text-boxes and submit button
+                .name-item {
                     font-size: 24px;
-                    border: solid black;
-                }
-            }
-
-            .email-item {
-                font-size: 24px;
-
-                #email {
-                    width: 450px;
-                    font-size: 24px;
-                    border: solid black;
-                }
-            }
-
-            .message-item {
-                font-size: 24px;
-                #message{
-                    width: 450px;
-                    font-size: 24px;
-                    border: solid black;
-                }
-            }
-            // Button for submmit, slightly rounded
-            .submit-btn {
-                #submit {
-                    width: 100px;
-                    height: 50px;
-                    font-size: 24px;
-                    border-radius: 25%;
-                    border: solid black;
-                }
-                // Shows effect when cursor is hovering over button
-                #submit:hover {
-                    background-color: teal;
-                }
-                // Gives effect for button press and adding a shadow effect on press
-                #submit:active {
-                    box-shadow: 0 5px #666;
-                    transform: translateY(4px);
-                }
-            }
-        }
-    }
     
+                    #name {
+                        width: 450px;
+                        font-size: 24px;
+                        border: solid black;
+                    }
+                }
+                // Email styling and format
+                .email-item {
+                    font-size: 24px;
+    
+                    #email {
+                        width: 450px;
+                        font-size: 24px;
+                        border: solid black;
+                    }
+                }
+                // Message styling and format
+                .message-item {
+                    font-size: 24px;
+                    #message{
+                        width: 450px;
+                        font-size: 24px;
+                        border: solid black;
+                    }
+                }
+                // Button for submmit, slightly rounded
+                .submit-btn {
+                    #submit {
+                        width: 100px;
+                        height: 50px;
+                        font-size: 24px;
+                        border-radius: 25%;
+                        border: solid black;
+                    }
+                    // Shows effect when cursor is hovering over button
+                    #submit:hover {
+                        background-color: teal;
+                    }
+                    // Gives effect for button press and adding a shadow effect on press
+                    #submit:active {
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
+                    }
+                }
+                // Resume link, phone and address postioning
+                .p-info {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    margin-top: 10px;
+                    position: relative;
+        
+                    .download-item {
+                        width: 30%;
+                        font-size: 50px;
+                        color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            color: black;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+            
+                    .phone-item {
+                        width: 30%;
+                        font-size: 50px;
+                        color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            color: black;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+            
+                    .address-item {
+                        width: 30%;
+                        font-size: 50px;
+                        color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            color: black;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+                }
+        
+        }
+    } 
 }
